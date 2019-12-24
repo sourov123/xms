@@ -2980,15 +2980,22 @@ html, body {
 <body>
   <div id="loading">
 <div style="position: absolute; left: 50%; top:50%; transform: translate(-50%,-50%);  font-size: 2em; padding: 10px 10px;">
- 
-        <div class="trinity-rings-spinner">
+    <div class="trinity-rings-spinner">
   <div class="circle"></div>
   <div class="circle"></div>
   <div class="circle"></div>
 </div>
 </div>
     </div>
+    <script>
     
+    
+    var overlay = document.getElementById("loading");
+
+window.addEventListener('load', function(){
+  overlay.style.display = 'none';
+})
+</script>	
 
 <div class="snow"></div>
 <div class="snow"></div>
@@ -3235,14 +3242,6 @@ html, body {
 
 </div>
 <h2 style="position: absolute; text-align: center; top: 75%; left: 50%; transform: translate(-50%,-50%); color: rgba(249,226,13,1.00); text-transform: uppercase; font-size: 6.5vh; margin-top: 35px; bottom: 0; font-weight: bold; letter-spacing: 2px; text-shadow: 1px 1px 4px rgba(0,153,51,0.9),1px 1px 4px rgba(0,153,51,0.9),1px 1px 4px rgba(0,153,51,0.9),1px 1px 4px rgba(0,153,51,0.9);">Merry Christmas</h2>
-<script>
-    
-    
-    var overlay = document.getElementById("loading");
 
-window.addEventListener('load', function(){
-  overlay.style.display = 'none';
-})
-</script>	
 </body>
 </html>
