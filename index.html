@@ -1,0 +1,2600 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="2.PNG"/>
+<link rel="shortcut icon" type="image/png" href="2.PNG"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<title>Merry Christmas</title>
+<style>
+	/* Font */
+@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
+
+/* Colors */
+/* Config */
+/* Pretty Lights */
+.bokeh {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;  
+}
+
+.light {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.light:nth-child(1) {
+  width: 90px;
+  height: 90px;
+  top: 64%;
+  left: 70%;
+  background: #FE0016;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 28s light6 linear infinite;
+          animation: 28s light6 linear infinite;
+}
+
+.light:nth-child(2) {
+  width: 95px;
+  height: 95px;
+  top: 95%;
+  left: 86%;
+  background: #D00010;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 34s light5 linear infinite;
+          animation: 34s light5 linear infinite;
+}
+
+.light:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  top: 2%;
+  left: 95%;
+  background: #63C13B;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 17s light6 linear infinite;
+          animation: 17s light6 linear infinite;
+}
+
+.light:nth-child(4) {
+  width: 83px;
+  height: 83px;
+  top: 55%;
+  left: 22%;
+  background: #D00010;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 29s light6 linear infinite;
+          animation: 29s light6 linear infinite;
+}
+
+.light:nth-child(5) {
+  width: 99px;
+  height: 99px;
+  top: 71%;
+  left: 46%;
+  background: #FEC641;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 17s light5 linear infinite;
+          animation: 17s light5 linear infinite;
+}
+
+.light:nth-child(6) {
+  width: 76px;
+  height: 76px;
+  top: 55%;
+  left: 51%;
+  background: #D00010;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 14s light4 linear infinite;
+          animation: 14s light4 linear infinite;
+}
+
+.light:nth-child(7) {
+  width: 84px;
+  height: 84px;
+  top: 45%;
+  left: 57%;
+  background: #FEE34A;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 32s light2 linear infinite;
+          animation: 32s light2 linear infinite;
+}
+
+.light:nth-child(8) {
+  width: 83px;
+  height: 83px;
+  top: 17%;
+  left: 50%;
+  background: #7D0006;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 32s light2 linear infinite;
+          animation: 32s light2 linear infinite;
+}
+
+.light:nth-child(9) {
+  width: 83px;
+  height: 83px;
+  top: 59%;
+  left: 64%;
+  background: #2F8A27;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 24s light6 linear infinite;
+          animation: 24s light6 linear infinite;
+}
+
+.light:nth-child(10) {
+  width: 96px;
+  height: 96px;
+  top: 31%;
+  left: 42%;
+  background: #D00010;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 19s light5 linear infinite;
+          animation: 19s light5 linear infinite;
+}
+
+.light:nth-child(11) {
+  width: 89px;
+  height: 89px;
+  top: 75%;
+  left: 24%;
+  background: #D00010;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 22s light6 linear infinite;
+          animation: 22s light6 linear infinite;
+}
+
+.light:nth-child(12) {
+  width: 81px;
+  height: 81px;
+  top: 46%;
+  left: 87%;
+  background: #7D0006;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 27s light3 linear infinite;
+          animation: 27s light3 linear infinite;
+}
+
+.light:nth-child(13) {
+  width: 89px;
+  height: 89px;
+  top: 29%;
+  left: 95%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 35s light2 linear infinite;
+          animation: 35s light2 linear infinite;
+}
+
+.light:nth-child(14) {
+  width: 89px;
+  height: 89px;
+  top: 65%;
+  left: 53%;
+  background: #7D0006;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 23s light5 linear infinite;
+          animation: 23s light5 linear infinite;
+}
+
+.light:nth-child(15) {
+  width: 77px;
+  height: 77px;
+  top: 5%;
+  left: 4%;
+  background: #5C6C94;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 32s light6 linear infinite;
+          animation: 32s light6 linear infinite;
+}
+
+.light:nth-child(16) {
+  width: 94px;
+  height: 94px;
+  top: 58%;
+  left: 4%;
+  background: #63C13B;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 17s light3 linear infinite;
+          animation: 17s light3 linear infinite;
+}
+
+.light:nth-child(17) {
+  width: 92px;
+  height: 92px;
+  top: 1%;
+  left: 99%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 27s light5 linear infinite;
+          animation: 27s light5 linear infinite;
+}
+
+.light:nth-child(18) {
+  width: 82px;
+  height: 82px;
+  top: 20%;
+  left: 4%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 35s light2 linear infinite;
+          animation: 35s light2 linear infinite;
+}
+
+.light:nth-child(19) {
+  width: 93px;
+  height: 93px;
+  top: 56%;
+  left: 72%;
+  background: #FEC641;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 32s light4 linear infinite;
+          animation: 32s light4 linear infinite;
+}
+
+.light:nth-child(20) {
+  width: 93px;
+  height: 93px;
+  top: 67%;
+  left: 7%;
+  background: #FE0016;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 31s light2 linear infinite;
+          animation: 31s light2 linear infinite;
+}
+
+.light:nth-child(21) {
+  width: 99px;
+  height: 99px;
+  top: 64%;
+  left: 57%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 34s light2 linear infinite;
+          animation: 34s light2 linear infinite;
+}
+
+.light:nth-child(22) {
+  width: 78px;
+  height: 78px;
+  top: 16%;
+  left: 26%;
+  background: #FEC641;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 20s light5 linear infinite;
+          animation: 20s light5 linear infinite;
+}
+
+.light:nth-child(23) {
+  width: 96px;
+  height: 96px;
+  top: 22%;
+  left: 54%;
+  background: #63C13B;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 14s light6 linear infinite;
+          animation: 14s light6 linear infinite;
+}
+
+.light:nth-child(24) {
+  width: 96px;
+  height: 96px;
+  top: 30%;
+  left: 69%;
+  background: #7D0006;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 27s light5 linear infinite;
+          animation: 27s light5 linear infinite;
+}
+
+.light:nth-child(25) {
+  width: 82px;
+  height: 82px;
+  top: 2%;
+  left: 70%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 11s light3 linear infinite;
+          animation: 11s light3 linear infinite;
+}
+
+.light:nth-child(26) {
+  width: 79px;
+  height: 79px;
+  top: 32%;
+  left: 86%;
+  background: #7D0006;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 25s light5 linear infinite;
+          animation: 25s light5 linear infinite;
+}
+
+.light:nth-child(27) {
+  width: 88px;
+  height: 88px;
+  top: 26%;
+  left: 53%;
+  background: #FEE34A;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 21s light4 linear infinite;
+          animation: 21s light4 linear infinite;
+}
+
+.light:nth-child(28) {
+  width: 97px;
+  height: 97px;
+  top: 96%;
+  left: 47%;
+  background: #2F8A27;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 31s light2 linear infinite;
+          animation: 31s light2 linear infinite;
+}
+
+.light:nth-child(29) {
+  width: 83px;
+  height: 83px;
+  top: 52%;
+  left: 41%;
+  background: #D00010;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 21s light2 linear infinite;
+          animation: 21s light2 linear infinite;
+}
+
+.light:nth-child(30) {
+  width: 92px;
+  height: 92px;
+  top: 94%;
+  left: 87%;
+  background: #2F8A27;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 35s light5 linear infinite;
+          animation: 35s light5 linear infinite;
+}
+
+.light:nth-child(31) {
+  width: 97px;
+  height: 97px;
+  top: 17%;
+  left: 95%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 16s light2 linear infinite;
+          animation: 16s light2 linear infinite;
+}
+
+.light:nth-child(32) {
+  width: 87px;
+  height: 87px;
+  top: 3%;
+  left: 31%;
+  background: #5C6C94;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 20s light2 linear infinite;
+          animation: 20s light2 linear infinite;
+}
+
+.light:nth-child(33) {
+  width: 94px;
+  height: 94px;
+  top: 27%;
+  left: 79%;
+  background: #FEC641;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 23s light5 linear infinite;
+          animation: 23s light5 linear infinite;
+}
+
+.light:nth-child(34) {
+  width: 87px;
+  height: 87px;
+  top: 72%;
+  left: 31%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 29s light2 linear infinite;
+          animation: 29s light2 linear infinite;
+}
+
+.light:nth-child(35) {
+  width: 83px;
+  height: 83px;
+  top: 5%;
+  left: 72%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 25s light5 linear infinite;
+          animation: 25s light5 linear infinite;
+}
+
+.light:nth-child(36) {
+  width: 93px;
+  height: 93px;
+  top: 42%;
+  left: 6%;
+  background: #6B0D05;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 27s light5 linear infinite;
+          animation: 27s light5 linear infinite;
+}
+
+.light:nth-child(37) {
+  width: 93px;
+  height: 93px;
+  top: 90%;
+  left: 75%;
+  background: #7D0006;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 12s light6 linear infinite;
+          animation: 12s light6 linear infinite;
+}
+
+.light:nth-child(38) {
+  width: 85px;
+  height: 85px;
+  top: 96%;
+  left: 17%;
+  background: #63C13B;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 19s light4 linear infinite;
+          animation: 19s light4 linear infinite;
+}
+
+.light:nth-child(39) {
+  width: 89px;
+  height: 89px;
+  top: 31%;
+  left: 19%;
+  background: #5C6C94;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 11s light6 linear infinite;
+          animation: 11s light6 linear infinite;
+}
+
+.light:nth-child(40) {
+  width: 82px;
+  height: 82px;
+  top: 36%;
+  left: 84%;
+  background: #D00010;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 11s light3 linear infinite;
+          animation: 11s light3 linear infinite;
+}
+
+.light:nth-child(41) {
+  width: 78px;
+  height: 78px;
+  top: 35%;
+  left: 83%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 30s light5 linear infinite;
+          animation: 30s light5 linear infinite;
+}
+
+.light:nth-child(42) {
+  width: 80px;
+  height: 80px;
+  top: 27%;
+  left: 60%;
+  background: #6B0D05;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 15s light2 linear infinite;
+          animation: 15s light2 linear infinite;
+}
+
+.light:nth-child(43) {
+  width: 95px;
+  height: 95px;
+  top: 14%;
+  left: 17%;
+  background: #DB1913;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 33s light3 linear infinite;
+          animation: 33s light3 linear infinite;
+}
+
+.light:nth-child(44) {
+  width: 97px;
+  height: 97px;
+  top: 35%;
+  left: 82%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 15s light2 linear infinite;
+          animation: 15s light2 linear infinite;
+}
+
+.light:nth-child(45) {
+  width: 76px;
+  height: 76px;
+  top: 25%;
+  left: 64%;
+  background: #2F8A27;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 25s light3 linear infinite;
+          animation: 25s light3 linear infinite;
+}
+
+.light:nth-child(46) {
+  width: 89px;
+  height: 89px;
+  top: 54%;
+  left: 90%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 31s light6 linear infinite;
+          animation: 31s light6 linear infinite;
+}
+
+.light:nth-child(47) {
+  width: 82px;
+  height: 82px;
+  top: 63%;
+  left: 49%;
+  background: #DB1913;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 16s light6 linear infinite;
+          animation: 16s light6 linear infinite;
+}
+
+.light:nth-child(48) {
+  width: 76px;
+  height: 76px;
+  top: 9%;
+  left: 32%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 12s light4 linear infinite;
+          animation: 12s light4 linear infinite;
+}
+
+.light:nth-child(49) {
+  width: 80px;
+  height: 80px;
+  top: 37%;
+  left: 62%;
+  background: #6B0D05;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 27s light2 linear infinite;
+          animation: 27s light2 linear infinite;
+}
+
+.light:nth-child(50) {
+  width: 89px;
+  height: 89px;
+  top: 61%;
+  left: 8%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 28s light4 linear infinite;
+          animation: 28s light4 linear infinite;
+}
+
+.light:nth-child(51) {
+  width: 80px;
+  height: 80px;
+  top: 28%;
+  left: 81%;
+  background: #FEC641;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 35s light4 linear infinite;
+          animation: 35s light4 linear infinite;
+}
+
+.light:nth-child(52) {
+  width: 79px;
+  height: 79px;
+  top: 6%;
+  left: 5%;
+  background: #DB1913;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 32s light4 linear infinite;
+          animation: 32s light4 linear infinite;
+}
+
+.light:nth-child(53) {
+  width: 92px;
+  height: 92px;
+  top: 14%;
+  left: 85%;
+  background: #DB1913;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 28s light3 linear infinite;
+          animation: 28s light3 linear infinite;
+}
+
+.light:nth-child(54) {
+  width: 76px;
+  height: 76px;
+  top: 99%;
+  left: 27%;
+  background: #FEC641;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 19s light2 linear infinite;
+          animation: 19s light2 linear infinite;
+}
+
+.light:nth-child(55) {
+  width: 85px;
+  height: 85px;
+  top: 39%;
+  left: 24%;
+  background: #63C13B;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 18s light6 linear infinite;
+          animation: 18s light6 linear infinite;
+}
+
+.light:nth-child(56) {
+  width: 76px;
+  height: 76px;
+  top: 51%;
+  left: 26%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 17s light6 linear infinite;
+          animation: 17s light6 linear infinite;
+}
+
+.light:nth-child(57) {
+  width: 91px;
+  height: 91px;
+  top: 59%;
+  left: 4%;
+  background: #5C6C94;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 15s light2 linear infinite;
+          animation: 15s light2 linear infinite;
+}
+
+.light:nth-child(58) {
+  width: 87px;
+  height: 87px;
+  top: 30%;
+  left: 82%;
+  background: #63C13B;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 13s light6 linear infinite;
+          animation: 13s light6 linear infinite;
+}
+
+.light:nth-child(59) {
+  width: 94px;
+  height: 94px;
+  top: 51%;
+  left: 65%;
+  background: #7D0006;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 23s light2 linear infinite;
+          animation: 23s light2 linear infinite;
+}
+
+.light:nth-child(60) {
+  width: 80px;
+  height: 80px;
+  top: 34%;
+  left: 70%;
+  background: #FE0016;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 18s light5 linear infinite;
+          animation: 18s light5 linear infinite;
+}
+
+.light:nth-child(61) {
+  width: 99px;
+  height: 99px;
+  top: 36%;
+  left: 61%;
+  background: #FEE34A;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 22s light2 linear infinite;
+          animation: 22s light2 linear infinite;
+}
+
+.light:nth-child(62) {
+  width: 92px;
+  height: 92px;
+  top: 20%;
+  left: 30%;
+  background: #FEC641;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 34s light3 linear infinite;
+          animation: 34s light3 linear infinite;
+}
+
+.light:nth-child(63) {
+  width: 80px;
+  height: 80px;
+  top: 19%;
+  left: 17%;
+  background: #FE0016;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 15s light6 linear infinite;
+          animation: 15s light6 linear infinite;
+}
+
+.light:nth-child(64) {
+  width: 78px;
+  height: 78px;
+  top: 53%;
+  left: 13%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 11s light5 linear infinite;
+          animation: 11s light5 linear infinite;
+}
+
+.light:nth-child(65) {
+  width: 78px;
+  height: 78px;
+  top: 63%;
+  left: 1%;
+  background: #FEC641;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 11s light5 linear infinite;
+          animation: 11s light5 linear infinite;
+}
+
+.light:nth-child(66) {
+  width: 79px;
+  height: 79px;
+  top: 25%;
+  left: 89%;
+  background: #7D0006;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 23s light2 linear infinite;
+          animation: 23s light2 linear infinite;
+}
+
+.light:nth-child(67) {
+  width: 90px;
+  height: 90px;
+  top: 40%;
+  left: 60%;
+  background: #DB1913;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 28s light6 linear infinite;
+          animation: 28s light6 linear infinite;
+}
+
+.light:nth-child(68) {
+  width: 77px;
+  height: 77px;
+  top: 30%;
+  left: 88%;
+  background: #63C13B;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 25s light2 linear infinite;
+          animation: 25s light2 linear infinite;
+}
+
+.light:nth-child(69) {
+  width: 99px;
+  height: 99px;
+  top: 92%;
+  left: 45%;
+  background: #FEE34A;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 11s light3 linear infinite;
+          animation: 11s light3 linear infinite;
+}
+
+.light:nth-child(70) {
+  width: 95px;
+  height: 95px;
+  top: 8%;
+  left: 40%;
+  background: #6B0D05;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 28s light5 linear infinite;
+          animation: 28s light5 linear infinite;
+}
+
+.light:nth-child(71) {
+  width: 89px;
+  height: 89px;
+  top: 32%;
+  left: 87%;
+  background: #FE0016;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 12s light6 linear infinite;
+          animation: 12s light6 linear infinite;
+}
+
+.light:nth-child(72) {
+  width: 85px;
+  height: 85px;
+  top: 76%;
+  left: 30%;
+  background: #FEC641;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 13s light5 linear infinite;
+          animation: 13s light5 linear infinite;
+}
+
+.light:nth-child(73) {
+  width: 88px;
+  height: 88px;
+  top: 70%;
+  left: 72%;
+  background: #6B0D05;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 20s light4 linear infinite;
+          animation: 20s light4 linear infinite;
+}
+
+.light:nth-child(74) {
+  width: 82px;
+  height: 82px;
+  top: 49%;
+  left: 46%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 34s light2 linear infinite;
+          animation: 34s light2 linear infinite;
+}
+
+.light:nth-child(75) {
+  width: 90px;
+  height: 90px;
+  top: 17%;
+  left: 93%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 28s light2 linear infinite;
+          animation: 28s light2 linear infinite;
+}
+
+.light:nth-child(76) {
+  width: 94px;
+  height: 94px;
+  top: 79%;
+  left: 68%;
+  background: #FEC641;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 22s light4 linear infinite;
+          animation: 22s light4 linear infinite;
+}
+
+.light:nth-child(77) {
+  width: 98px;
+  height: 98px;
+  top: 50%;
+  left: 4%;
+  background: #D00010;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 24s light2 linear infinite;
+          animation: 24s light2 linear infinite;
+}
+
+.light:nth-child(78) {
+  width: 83px;
+  height: 83px;
+  top: 26%;
+  left: 7%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 35s light2 linear infinite;
+          animation: 35s light2 linear infinite;
+}
+
+.light:nth-child(79) {
+  width: 97px;
+  height: 97px;
+  top: 37%;
+  left: 30%;
+  background: #FE0016;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 21s light3 linear infinite;
+          animation: 21s light3 linear infinite;
+}
+
+.light:nth-child(80) {
+  width: 85px;
+  height: 85px;
+  top: 31%;
+  left: 79%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 18s light3 linear infinite;
+          animation: 18s light3 linear infinite;
+}
+
+.light:nth-child(81) {
+  width: 80px;
+  height: 80px;
+  top: 8%;
+  left: 12%;
+  background: #FEC641;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 32s light2 linear infinite;
+          animation: 32s light2 linear infinite;
+}
+
+.light:nth-child(82) {
+  width: 91px;
+  height: 91px;
+  top: 85%;
+  left: 7%;
+  background: #2F8A27;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 31s light5 linear infinite;
+          animation: 31s light5 linear infinite;
+}
+
+.light:nth-child(83) {
+  width: 93px;
+  height: 93px;
+  top: 62%;
+  left: 17%;
+  background: #FEE34A;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 16s light5 linear infinite;
+          animation: 16s light5 linear infinite;
+}
+
+.light:nth-child(84) {
+  width: 86px;
+  height: 86px;
+  top: 69%;
+  left: 42%;
+  background: #7D0006;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 17s light6 linear infinite;
+          animation: 17s light6 linear infinite;
+}
+
+.light:nth-child(85) {
+  width: 94px;
+  height: 94px;
+  top: 59%;
+  left: 4%;
+  background: #DB1913;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 21s light6 linear infinite;
+          animation: 21s light6 linear infinite;
+}
+
+.light:nth-child(86) {
+  width: 76px;
+  height: 76px;
+  top: 23%;
+  left: 19%;
+  background: #7D0006;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 25s light5 linear infinite;
+          animation: 25s light5 linear infinite;
+}
+
+.light:nth-child(87) {
+  width: 95px;
+  height: 95px;
+  top: 27%;
+  left: 79%;
+  background: #7D0006;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 16s light3 linear infinite;
+          animation: 16s light3 linear infinite;
+}
+
+.light:nth-child(88) {
+  width: 77px;
+  height: 77px;
+  top: 72%;
+  left: 4%;
+  background: #63C13B;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 31s light2 linear infinite;
+          animation: 31s light2 linear infinite;
+}
+
+.light:nth-child(89) {
+  width: 80px;
+  height: 80px;
+  top: 40%;
+  left: 13%;
+  background: #DB1913;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 19s light5 linear infinite;
+          animation: 19s light5 linear infinite;
+}
+
+.light:nth-child(90) {
+  width: 92px;
+  height: 92px;
+  top: 21%;
+  left: 64%;
+  background: #5C6C94;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 28s light4 linear infinite;
+          animation: 28s light4 linear infinite;
+}
+
+.light:nth-child(91) {
+  width: 89px;
+  height: 89px;
+  top: 39%;
+  left: 14%;
+  background: #7D0006;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 27s light2 linear infinite;
+          animation: 27s light2 linear infinite;
+}
+
+.light:nth-child(92) {
+  width: 91px;
+  height: 91px;
+  top: 40%;
+  left: 63%;
+  background: #5C6C94;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 14s light4 linear infinite;
+          animation: 14s light4 linear infinite;
+}
+
+.light:nth-child(93) {
+  width: 92px;
+  height: 92px;
+  top: 43%;
+  left: 8%;
+  background: #7D0006;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 32s light5 linear infinite;
+          animation: 32s light5 linear infinite;
+}
+
+.light:nth-child(94) {
+  width: 92px;
+  height: 92px;
+  top: 99%;
+  left: 89%;
+  background: #7D0006;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 32s light3 linear infinite;
+          animation: 32s light3 linear infinite;
+}
+
+.light:nth-child(95) {
+  width: 100px;
+  height: 100px;
+  top: 83%;
+  left: 57%;
+  background: #6B0D05;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 17s light2 linear infinite;
+          animation: 17s light2 linear infinite;
+}
+
+.light:nth-child(96) {
+  width: 96px;
+  height: 96px;
+  top: 81%;
+  left: 66%;
+  background: #63C13B;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 11s light4 linear infinite;
+          animation: 11s light4 linear infinite;
+}
+
+.light:nth-child(97) {
+  width: 85px;
+  height: 85px;
+  top: 35%;
+  left: 79%;
+  background: #6B0D05;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 22s light2 linear infinite;
+          animation: 22s light2 linear infinite;
+}
+
+.light:nth-child(98) {
+  width: 91px;
+  height: 91px;
+  top: 28%;
+  left: 76%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 26s light2 linear infinite;
+          animation: 26s light2 linear infinite;
+}
+
+.light:nth-child(99) {
+  width: 99px;
+  height: 99px;
+  top: 89%;
+  left: 25%;
+  background: #6B0D05;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 21s light2 linear infinite;
+          animation: 21s light2 linear infinite;
+}
+
+.light:nth-child(100) {
+  width: 87px;
+  height: 87px;
+  top: 83%;
+  left: 20%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 33s light2 linear infinite;
+          animation: 33s light2 linear infinite;
+}
+
+.light:nth-child(101) {
+  width: 82px;
+  height: 82px;
+  top: 44%;
+  left: 66%;
+  background: #5C6C94;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 26s light3 linear infinite;
+          animation: 26s light3 linear infinite;
+}
+
+.light:nth-child(102) {
+  width: 94px;
+  height: 94px;
+  top: 38%;
+  left: 62%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 11s light2 linear infinite;
+          animation: 11s light2 linear infinite;
+}
+
+.light:nth-child(103) {
+  width: 78px;
+  height: 78px;
+  top: 80%;
+  left: 76%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 33s light2 linear infinite;
+          animation: 33s light2 linear infinite;
+}
+
+.light:nth-child(104) {
+  width: 91px;
+  height: 91px;
+  top: 32%;
+  left: 61%;
+  background: #5C6C94;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 12s light3 linear infinite;
+          animation: 12s light3 linear infinite;
+}
+
+.light:nth-child(105) {
+  width: 97px;
+  height: 97px;
+  top: 43%;
+  left: 99%;
+  background: #6B0D05;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 13s light5 linear infinite;
+          animation: 13s light5 linear infinite;
+}
+
+.light:nth-child(106) {
+  width: 99px;
+  height: 99px;
+  top: 26%;
+  left: 14%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 32s light2 linear infinite;
+          animation: 32s light2 linear infinite;
+}
+
+.light:nth-child(107) {
+  width: 93px;
+  height: 93px;
+  top: 37%;
+  left: 99%;
+  background: #DB1913;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 25s light3 linear infinite;
+          animation: 25s light3 linear infinite;
+}
+
+.light:nth-child(108) {
+  width: 84px;
+  height: 84px;
+  top: 45%;
+  left: 93%;
+  background: #FEE34A;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 22s light3 linear infinite;
+          animation: 22s light3 linear infinite;
+}
+
+.light:nth-child(109) {
+  width: 98px;
+  height: 98px;
+  top: 87%;
+  left: 96%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 33s light5 linear infinite;
+          animation: 33s light5 linear infinite;
+}
+
+.light:nth-child(110) {
+  width: 87px;
+  height: 87px;
+  top: 58%;
+  left: 45%;
+  background: #FE0016;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 27s light5 linear infinite;
+          animation: 27s light5 linear infinite;
+}
+
+.light:nth-child(111) {
+  width: 83px;
+  height: 83px;
+  top: 35%;
+  left: 71%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 15s light5 linear infinite;
+          animation: 15s light5 linear infinite;
+}
+
+.light:nth-child(112) {
+  width: 78px;
+  height: 78px;
+  top: 12%;
+  left: 60%;
+  background: #5C6C94;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 27s light4 linear infinite;
+          animation: 27s light4 linear infinite;
+}
+
+.light:nth-child(113) {
+  width: 96px;
+  height: 96px;
+  top: 1%;
+  left: 98%;
+  background: #63C13B;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 13s light3 linear infinite;
+          animation: 13s light3 linear infinite;
+}
+
+.light:nth-child(114) {
+  width: 83px;
+  height: 83px;
+  top: 39%;
+  left: 27%;
+  background: #D00010;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 20s light3 linear infinite;
+          animation: 20s light3 linear infinite;
+}
+
+.light:nth-child(115) {
+  width: 85px;
+  height: 85px;
+  top: 27%;
+  left: 48%;
+  background: #6B0D05;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 11s light3 linear infinite;
+          animation: 11s light3 linear infinite;
+}
+
+.light:nth-child(116) {
+  width: 85px;
+  height: 85px;
+  top: 19%;
+  left: 65%;
+  background: #D00010;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 21s light4 linear infinite;
+          animation: 21s light4 linear infinite;
+}
+
+.light:nth-child(117) {
+  width: 99px;
+  height: 99px;
+  top: 90%;
+  left: 68%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 18s light5 linear infinite;
+          animation: 18s light5 linear infinite;
+}
+
+.light:nth-child(118) {
+  width: 81px;
+  height: 81px;
+  top: 14%;
+  left: 20%;
+  background: #63C13B;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 16s light3 linear infinite;
+          animation: 16s light3 linear infinite;
+}
+
+.light:nth-child(119) {
+  width: 96px;
+  height: 96px;
+  top: 91%;
+  left: 59%;
+  background: #6B0D05;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 21s light5 linear infinite;
+          animation: 21s light5 linear infinite;
+}
+
+.light:nth-child(120) {
+  width: 77px;
+  height: 77px;
+  top: 54%;
+  left: 91%;
+  background: #DB1913;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 23s light3 linear infinite;
+          animation: 23s light3 linear infinite;
+}
+
+.light:nth-child(121) {
+  width: 86px;
+  height: 86px;
+  top: 97%;
+  left: 81%;
+  background: #5C6C94;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 23s light4 linear infinite;
+          animation: 23s light4 linear infinite;
+}
+
+.light:nth-child(122) {
+  width: 99px;
+  height: 99px;
+  top: 69%;
+  left: 70%;
+  background: #D00010;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 30s light5 linear infinite;
+          animation: 30s light5 linear infinite;
+}
+
+.light:nth-child(123) {
+  width: 78px;
+  height: 78px;
+  top: 9%;
+  left: 34%;
+  background: #63C13B;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 29s light4 linear infinite;
+          animation: 29s light4 linear infinite;
+}
+
+.light:nth-child(124) {
+  width: 86px;
+  height: 86px;
+  top: 23%;
+  left: 7%;
+  background: #63C13B;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 21s light6 linear infinite;
+          animation: 21s light6 linear infinite;
+}
+
+.light:nth-child(125) {
+  width: 97px;
+  height: 97px;
+  top: 88%;
+  left: 71%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 25s light6 linear infinite;
+          animation: 25s light6 linear infinite;
+}
+
+.light:nth-child(126) {
+  width: 88px;
+  height: 88px;
+  top: 86%;
+  left: 31%;
+  background: #6B0D05;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 32s light3 linear infinite;
+          animation: 32s light3 linear infinite;
+}
+
+.light:nth-child(127) {
+  width: 84px;
+  height: 84px;
+  top: 71%;
+  left: 5%;
+  background: #D00010;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 21s light5 linear infinite;
+          animation: 21s light5 linear infinite;
+}
+
+.light:nth-child(128) {
+  width: 92px;
+  height: 92px;
+  top: 100%;
+  left: 82%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 34s light3 linear infinite;
+          animation: 34s light3 linear infinite;
+}
+
+.light:nth-child(129) {
+  width: 98px;
+  height: 98px;
+  top: 65%;
+  left: 85%;
+  background: #FEE34A;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 28s light6 linear infinite;
+          animation: 28s light6 linear infinite;
+}
+
+.light:nth-child(130) {
+  width: 79px;
+  height: 79px;
+  top: 69%;
+  left: 100%;
+  background: #5C6C94;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 17s light6 linear infinite;
+          animation: 17s light6 linear infinite;
+}
+
+.light:nth-child(131) {
+  width: 91px;
+  height: 91px;
+  top: 2%;
+  left: 63%;
+  background: #D00010;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 35s light3 linear infinite;
+          animation: 35s light3 linear infinite;
+}
+
+.light:nth-child(132) {
+  width: 98px;
+  height: 98px;
+  top: 95%;
+  left: 50%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 28s light4 linear infinite;
+          animation: 28s light4 linear infinite;
+}
+
+.light:nth-child(133) {
+  width: 90px;
+  height: 90px;
+  top: 36%;
+  left: 74%;
+  background: #2F8A27;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 19s light3 linear infinite;
+          animation: 19s light3 linear infinite;
+}
+
+.light:nth-child(134) {
+  width: 92px;
+  height: 92px;
+  top: 18%;
+  left: 38%;
+  background: #FEC641;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 29s light6 linear infinite;
+          animation: 29s light6 linear infinite;
+}
+
+.light:nth-child(135) {
+  width: 94px;
+  height: 94px;
+  top: 60%;
+  left: 91%;
+  background: #FEC641;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 12s light5 linear infinite;
+          animation: 12s light5 linear infinite;
+}
+
+.light:nth-child(136) {
+  width: 99px;
+  height: 99px;
+  top: 71%;
+  left: 95%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 14s light4 linear infinite;
+          animation: 14s light4 linear infinite;
+}
+
+.light:nth-child(137) {
+  width: 92px;
+  height: 92px;
+  top: 76%;
+  left: 74%;
+  background: #DB1913;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 16s light2 linear infinite;
+          animation: 16s light2 linear infinite;
+}
+
+.light:nth-child(138) {
+  width: 84px;
+  height: 84px;
+  top: 29%;
+  left: 64%;
+  background: #6B0D05;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 25s light6 linear infinite;
+          animation: 25s light6 linear infinite;
+}
+
+.light:nth-child(139) {
+  width: 79px;
+  height: 79px;
+  top: 35%;
+  left: 66%;
+  background: #2F8A27;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 33s light2 linear infinite;
+          animation: 33s light2 linear infinite;
+}
+
+.light:nth-child(140) {
+  width: 80px;
+  height: 80px;
+  top: 80%;
+  left: 95%;
+  background: #FE0016;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 24s light6 linear infinite;
+          animation: 24s light6 linear infinite;
+}
+
+.light:nth-child(141) {
+  width: 81px;
+  height: 81px;
+  top: 43%;
+  left: 67%;
+  background: #FEC641;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 23s light6 linear infinite;
+          animation: 23s light6 linear infinite;
+}
+
+.light:nth-child(142) {
+  width: 77px;
+  height: 77px;
+  top: 87%;
+  left: 1%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 12s light3 linear infinite;
+          animation: 12s light3 linear infinite;
+}
+
+.light:nth-child(143) {
+  width: 100px;
+  height: 100px;
+  top: 28%;
+  left: 36%;
+  background: #7D0006;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  -webkit-animation: 12s light6 linear infinite;
+          animation: 12s light6 linear infinite;
+}
+
+.light:nth-child(144) {
+  width: 86px;
+  height: 86px;
+  top: 98%;
+  left: 22%;
+  background: #D00010;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 17s light3 linear infinite;
+          animation: 17s light3 linear infinite;
+}
+
+.light:nth-child(145) {
+  width: 93px;
+  height: 93px;
+  top: 20%;
+  left: 78%;
+  background: #5C6C94;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 31s light3 linear infinite;
+          animation: 31s light3 linear infinite;
+}
+
+.light:nth-child(146) {
+  width: 83px;
+  height: 83px;
+  top: 48%;
+  left: 21%;
+  background: #FEE34A;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 15s light6 linear infinite;
+          animation: 15s light6 linear infinite;
+}
+
+.light:nth-child(147) {
+  width: 91px;
+  height: 91px;
+  top: 66%;
+  left: 3%;
+  background: #7D0006;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 27s light2 linear infinite;
+          animation: 27s light2 linear infinite;
+}
+
+.light:nth-child(148) {
+  width: 100px;
+  height: 100px;
+  top: 30%;
+  left: 1%;
+  background: #7D0006;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 18s light5 linear infinite;
+          animation: 18s light5 linear infinite;
+}
+
+.light:nth-child(149) {
+  width: 100px;
+  height: 100px;
+  top: 5%;
+  left: 2%;
+  background: #DB1913;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 20s light6 linear infinite;
+          animation: 20s light6 linear infinite;
+}
+
+.light:nth-child(150) {
+  width: 94px;
+  height: 94px;
+  top: 44%;
+  left: 63%;
+  background: #FEC641;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  -webkit-animation: 24s light4 linear infinite;
+          animation: 24s light4 linear infinite;
+}
+
+@-webkit-keyframes light1 {
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.64;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes light1 {
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.64;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes light2 {
+  25% {
+    opacity: 0.37;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes light2 {
+  25% {
+    opacity: 0.37;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes light3 {
+  25% {
+    opacity: 0.63;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.54;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes light3 {
+  25% {
+    opacity: 0.63;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.54;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes light4 {
+  25% {
+    opacity: 0.58;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.52;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes light4 {
+  25% {
+    opacity: 0.58;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.52;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes light5 {
+  25% {
+    opacity: 0.48;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.28;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes light5 {
+  25% {
+    opacity: 0.48;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.28;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Other Stuff */
+body, html {
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  background-image: linear-gradient(to right bottom,rgba(0,0,0,0.9)100%,rgba(51,0,51,0.6) );
+}
+
+h1 {
+
+  text-transform: uppercase;
+  text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+
+  position: absolute;
+  top: 55%;
+  z-index: 10;
+  opacity: 0.9;
+  left: 10%;
+  right: 10%;
+}
+	.wrapper {
+  width: 100vw;
+  height: 100vh;
+position: absolute;
+		z-index: 100000;
+}
+
+.snow {
+  border-radius: 50%;
+  opacity: 0.8;
+  position: absolute;
+  top: -100vh;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.layer1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: blur(1.5px);
+  box-shadow: 7.2vw 34.5vh 0 -0.12rem#fff,79.9vw 24vh 0 -0.01rem#fff,99vw 66.9vh 0 -0.26rem#fff,77.9vw 23.4vh 0 -0.42rem#fff,61.2vw 58.6vh 0 -0.37rem#fff,25.2vw 0.3vh 0 -0.16rem#fff,81.2vw 44.8vh 0 -0.03rem#fff,44.6vw 64.8vh 0 -0.42rem#fff,89.2vw 10.4vh 0 -0.23rem#fff,38.3vw 35.9vh 0 -0.4rem#fff,68.8vw 54.6vh 0 -0.16rem#fff,81.1vw 34.5vh 0 -0.43rem#fff,68.5vw 35.5vh 0 -0.27rem#fff,31.2vw 45.1vh 0 -0.09rem#fff,54.7vw 55.9vh 0 -0.47rem#fff,13vw 91.9vh 0 -0.13rem#fff,71vw 72.4vh 0 -0.31rem#fff,48.4vw 31.9vh 0 -0.15rem#fff,80.2vw 57.6vh 0 -0.14rem#fff,89.9vw 15.4vh 0 -0.2rem#fff,66vw 76.5vh 0 -0.07rem#fff,99.2vw 30vh 0 -0.28rem#fff,29.1vw 11vh 0 -0.01rem#fff,60.6vw 58.6vh 0 -0.03rem#fff,39.9vw 37.8vh 0 -0.19rem#fff,13.5vw 8.8vh 0 -0.3rem#fff,90.9vw 56.3vh 0 -0.1rem#fff,99vw 64vh 0 -0.35rem#fff,67vw 75.1vh 0 -0.35rem#fff,3.5vw 16.7vh 0 -0.37rem#fff,70.6vw 83.8vh 0 -0.21rem#fff,9.5vw 31.8vh 0 -0.09rem#fff,11.6vw 60.2vh 0 -0.46rem#fff,18.3vw 98.9vh 0 -0.22rem#fff,90vw 6vh 0 -0.12rem#fff,37.8vw 49.6vh 0 -0.09rem#fff,46.5vw 59.5vh 0 -0.15rem#fff,95.1vw 98.4vh 0 -0.05rem#fff,37.7vw 52.2vh 0 -0.46rem#fff,96vw 81.4vh 0 -0.04rem#fff,31.9vw 1.5vh 0 -0.08rem#fff,88.3vw 81.1vh 0 -0.17rem#fff,37.5vw 16.2vh 0 -0.16rem#fff,7.8vw 58.5vh 0 -0.14rem#fff,31.4vw 54.6vh 0 -0.22rem#fff,10.7vw 93.2vh 0 -0.38rem#fff,41.6vw 95vh 0 -0.25rem#fff,79.6vw 52.6vh 0 -0.21rem#fff,26.9vw 0.4vh 0 -0.43rem#fff,67.9vw 8.2vh 0 -0.05rem#fff,30.8vw 14.9vh 0 -0.18rem#fff,33.3vw 13.5vh 0 -0.06rem#fff,81.8vw 70.8vh 0 -0.16rem#fff,80.1vw 16.8vh 0 -0.13rem#fff,78.7vw 87.2vh 0 -0.39rem#fff,6.1vw 43.1vh 0 -0.41rem#fff,41.2vw 26.7vh 0 -0.22rem#fff,67.5vw 18.4vh 0 -0.4rem#fff,41.5vw 42vh 0 -0.09rem#fff,90.9vw 8vh 0 -0.1rem#fff,6.5vw 7.4vh 0 -0.23rem#fff,47vw 5.5vh 0 -0.49rem#fff,64vw 65vh 0 -0.18rem#fff,10.5vw 74.5vh 0 -0.49rem#fff,41vw 57.4vh 0 -0.37rem#fff,83.9vw 26.9vh 0 -0.28rem#fff,87.6vw 65.3vh 0 -0.11rem#fff,82.4vw 62.4vh 0 -0.4rem#fff,5.7vw 26.5vh 0 -0.06rem#fff,87vw 64.2vh 0 -0.47rem#fff,50.9vw 9.6vh 0 -0.09rem#fff,61.9vw 36.9vh 0 -0.46rem#fff,95.9vw 29.3vh 0 -0.4rem#fff,14.9vw 52.3vh 0 -0.12rem#fff,74.4vw 40.1vh 0 -0.29rem#fff,75.5vw 62vh 0 -0.25rem#fff,70.7vw 43.7vh 0 -0.15rem#fff,73.6vw 53.6vh 0 -0.24rem#fff,16.1vw 78.4vh 0 -0.45rem#fff,75.1vw 56.6vh 0 -0.49rem#fff,98.1vw 77.1vh 0 -0.47rem#fff,69.4vw 42.7vh 0 -0.46rem#fff,10.5vw 7.4vh 0 -0.32rem#fff,64.1vw 64.6vh 0 -0.41rem#fff,83.3vw 14.6vh 0 -0.03rem#fff,1.7vw 71.8vh 0 -0.45rem#fff,51.1vw 44.2vh 0 -0.1rem#fff,61.3vw 6.9vh 0 -0.44rem#fff,31.3vw 70.7vh 0 -0.37rem#fff,57.4vw 15.6vh 0 -0.34rem#fff,94.6vw 39.2vh 0 -0.27rem#fff,24.3vw 31.8vh 0 -0.22rem#fff,15vw 39.5vh 0 -0.31rem#fff,92.2vw 15.7vh 0 -0.27rem#fff,49.7vw 83.2vh 0 -0.16rem#fff,65.7vw 88.1vh 0 -0.43rem#fff,31.3vw 2.8vh 0 -0.16rem#fff,62.8vw 9.6vh 0 -0.12rem#fff,63.3vw 18.1vh 0 -0.15rem#fff,48.5vw 34.8vh 0 -0.08rem#fff,51.9vw 58.1vh 0 -0.45rem#fff,1.2vw 90.8vh 0 -0.36rem#fff,36.3vw 56.4vh 0 -0.14rem#fff,78.6vw 45vh 0 -0.06rem#fff,78.7vw 0.9vh 0 -0.01rem#fff,45.4vw 41.3vh 0 -0.15rem#fff,39.2vw 61.2vh 0 -0.21rem#fff,97.6vw 90.7vh 0 -0.34rem#fff,45.6vw 70.1vh 0 -0.47rem#fff,90.6vw 64.4vh 0 -0.45rem#fff,38.9vw 61.8vh 0 -0.48rem#fff,86.4vw 16.8vh 0 -0.07rem#fff,5.8vw 22.6vh 0 -0.17rem#fff,61.6vw 79vh 0 -0.27rem#fff,10.7vw 13.7vh 0 -0.19rem#fff,50.8vw 52.3vh 0 -0.32rem#fff,72.3vw 12.1vh 0 -0.13rem#fff,84.9vw 89.4vh 0 -0.1rem#fff,84.5vw 13.7vh 0 -0.34rem#fff,86.6vw 66.9vh 0 -0.33rem#fff,78.6vw 63.2vh 0 -0.16rem#fff,48.9vw 31.4vh 0 -0.12rem#fff,42.8vw 99.2vh 0 -0.45rem#fff,1vw 28vh 0 -0.1rem#fff,69.7vw 49.7vh 0 -0.23rem#fff,5.7vw 20.4vh 0 -0.17rem#fff,65.3vw 38vh 0 -0.34rem#fff,64.8vw 8.6vh 0 -0.17rem#fff,41.3vw 60.2vh 0 -0.39rem#fff,43.3vw 39.3vh 0 -0.45rem#fff,30vw 9.3vh 0 -0.33rem#fff,54.7vw 5vh 0 -0.25rem#fff,16.5vw 20.5vh 0 -0.32rem#fff,74.5vw 85.3vh 0 -0.23rem#fff,27.8vw 66vh 0 -0.04rem#fff,37.3vw 74.1vh 0 -0.45rem#fff,46.1vw 62.9vh 0 -0.02rem#fff,11.1vw 48.5vh 0 -0.29rem#fff,12.5vw 58.5vh 0 -0.08rem#fff,43.2vw 34.3vh 0 -0.31rem#fff,47.1vw 0.4vh 0 -0.18rem#fff,34.1vw 33vh 0 -0.49rem#fff,57vw 36vh 0 -0.3rem#fff,42.3vw 95.2vh 0 -0.46rem#fff,42.1vw 94.1vh 0 -0.36rem#fff,80.2vw 60.5vh 0 -0.32rem#fff,21vw 42.7vh 0 -0.44rem#fff,19.2vw 42.4vh 0 -0.08rem#fff,45.9vw 48.9vh 0 -0.28rem#fff,52.2vw 70.8vh 0 -0.01rem#fff,70.2vw 73.7vh 0 -0.35rem#fff,88.4vw 7.8vh 0 -0.24rem#fff,1.8vw 33.8vh 0 -0.45rem#fff,71.1vw 21.2vh 0 -0.28rem#fff,55.3vw 84.2vh 0 -0.22rem#fff,42.6vw 39.6vh 0 -0.11rem#fff,36.2vw 88.6vh 0 -0.45rem#fff,0.1vw 54.3vh 0 -0.03rem#fff,77.6vw 8.9vh 0 -0.46rem#fff,17.7vw 11.9vh 0 -0.06rem#fff,44.7vw 64.2vh 0 -0.33rem#fff,51.9vw 13.6vh 0 -0.35rem#fff,64.1vw 48.1vh 0 -0.13rem#fff,62.2vw 22.5vh 0 -0.33rem#fff,98.8vw 48.2vh 0 -0.18rem#fff,60vw 60.1vh 0 -0.23rem#fff,90.9vw 99.1vh 0 -0.35rem#fff,45vw 96.2vh 0 -0.33rem#fff,30.3vw 64.6vh 0 -0.13rem#fff,68.5vw 3.9vh 0 -0.19rem#fff,25.1vw 47.8vh 0 -0.07rem#fff,70.8vw 24.8vh 0 -0.31rem#fff,10.5vw 42.9vh 0 -0.22rem#fff,91.4vw 64.4vh 0 -0.15rem#fff,42.3vw 96.1vh 0 -0.15rem#fff,75.6vw 60.4vh 0 -0.24rem#fff,96.3vw 88.4vh 0 -0.47rem#fff,98.9vw 59.9vh 0 -0.49rem#fff,8.7vw 48.3vh 0 -0.37rem#fff,91.8vw 51.1vh 0 -0.26rem#fff,31.8vw 34.5vh 0 -0.15rem#fff,72.2vw 0.1vh 0 -0.18rem#fff,99.8vw 70.1vh 0 -0.45rem#fff,34.1vw 5.2vh 0 -0.46rem#fff,5.8vw 11.5vh 0 -0.27rem#fff,3.4vw 18.1vh 0 -0.1rem#fff,21.9vw 11.1vh 0 -0.49rem#fff,83.2vw 41.8vh 0 -0.03rem#fff,39.7vw 94.5vh 0 -0.1rem#fff,74.9vw 35vh 0 -0.3rem#fff,78.6vw 40.3vh 0 -0.47rem#fff,97.7vw 68.1vh 0 -0.49rem#fff,87.5vw 7.8vh 0 -0.4rem#fff,54.8vw 10.5vh 0 -0.26rem#fff,75.3vw 4.4vh 0 -0.38rem#fff,41.5vw 4.9vh 0 -0.45rem#fff,1vw 84.8vh 0 -0.21rem#fff,87.1vw 82.5vh 0 -0.48rem#fff,32.1vw 87.1vh 0 -0.06rem#fff,89.2vw 52.8vh 0 -0.21rem#fff,99.5vw 21.7vh 0 -0.01rem#fff,31.9vw 29vh 0 -0.17rem#fff,49vw 27.7vh 0 -0.19rem#fff,10.5vw 62.1vh 0 -0.47rem#fff,9.7vw 90.5vh 0 -0.28rem#fff,96.4vw 93.5vh 0 -0.35rem#fff,0.9vw 5.8vh 0 -0.2rem#fff,37.3vw 8.6vh 0 -0.12rem#fff,41.6vw 95.6vh 0 -0.43rem#fff,95.6vw 92.7vh 0 -0.29rem#fff,0.8vw 69.4vh 0 -0.31rem#fff,69.6vw 53.9vh 0 -0.23rem#fff,83.8vw 74.1vh 0 -0.26rem#fff,6.3vw 85vh 0 -0.08rem#fff,48.6vw 64.7vh 0 -0.17rem#fff,66.4vw 88vh 0 -0.33rem#fff,45.7vw 85vh 0 -0.07rem#fff,50.2vw 25.3vh 0 -0.04rem#fff,18vw 77.7vh 0 -0.13rem#fff,26.6vw 21.4vh 0 -0.02rem#fff,27.5vw 9.2vh 0 -0.19rem#fff,92.7vw 81.6vh 0 -0.04rem#fff,1.9vw 14.5vh 0 -0.48rem#fff,18.9vw 22.7vh 0 -0.18rem#fff,31.5vw 11.4vh 0 -0.02rem#fff,92vw 47.3vh 0 -0.1rem#fff,73.1vw 49.3vh 0 -0.06rem#fff,95.9vw 8vh 0 -0.12rem#fff,15vw 90.8vh 0 -0.42rem#fff,0.9vw 63.3vh 0 -0.45rem#fff,35.5vw 23.8vh 0 -0.28rem#fff,94vw 39vh 0 -0.01rem#fff,10.3vw 97.5vh 0 -0.49rem#fff,27vw 45.2vh 0 -0.43rem#fff,75.4vw 61.1vh 0 -0.28rem#fff,22.3vw 71.4vh 0 -0.4rem#fff,72.3vw 53.5vh 0 -0.15rem#fff,7.6vw 82.8vh 0 -0.43rem#fff,5.9vw 96.2vh 0 -0.28rem#fff,46.7vw 39.2vh 0 -0.3rem#fff,70.2vw 65.1vh 0 -0.26rem#fff,86.6vw 9.7vh 0 -0.33rem#fff,15vw 85.6vh 0 -0.47rem#fff,88.3vw 73.6vh 0 -0.14rem#fff,42.5vw 38.9vh 0 -0.44rem#fff,61.4vw 70.2vh 0 -0.12rem#fff,76.5vw 85vh 0 -0.32rem#fff,86.4vw 49.2vh 0 -0.38rem#fff,7.7vw 43.1vh 0 -0.45rem#fff,26vw 90.2vh 0 -0.06rem#fff,21.8vw 37.4vh 0 -0.39rem#fff,75vw 59.8vh 0 -0.22rem#fff,6vw 78vh 0 -0.32rem#fff,95vw 19.2vh 0 -0.42rem#fff,38.5vw 17vh 0 -0.12rem#fff,92.7vw 89.8vh 0 -0.3rem#fff,90.6vw 92.1vh 0 -0.22rem#fff,46.6vw 82.8vh 0 -0.01rem#fff,58.9vw 81.7vh 0 -0.37rem#fff,16.5vw 19vh 0 -0.06rem#fff,77vw 38.8vh 0 -0.03rem#fff,60vw 83.6vh 0 -0.24rem#fff,93.4vw 66.7vh 0 -0.13rem#fff,8vw 86.7vh 0 -0.41rem#fff,67.8vw 84.5vh 0 -0.15rem#fff,73.3vw 87.8vh 0 -0.27rem#fff,49vw 31.2vh 0 -0.01rem#fff,48.4vw 7.1vh 0 -0.45rem#fff,55vw 98.5vh 0 -0.02rem#fff,73.6vw 14vh 0 -0.5rem#fff,90vw 3.6vh 0 -0.38rem#fff,17vw 87.7vh 0 -0.13rem#fff,27.4vw 17.3vh 0 -0.25rem#fff,6.9vw 56vh 0 -0.32rem#fff,76.2vw 6.3vh 0 -0.04rem#fff,84.6vw 19.1vh 0 -0.01rem#fff,98.9vw 90.5vh 0 -0.46rem#fff,98.1vw 32.4vh 0 -0.41rem#fff,20.2vw 93.3vh 0 -0.35rem#fff,68.2vw 74.1vh 0 -0.19rem#fff,10.9vw 44.3vh 0 -0.12rem#fff,24.3vw 52.5vh 0 -0.35rem#fff,7.4vw 47.2vh 0 -0.03rem#fff,78.4vw 74.7vh 0 -0.49rem#fff,40.3vw 6.7vh 0 -0.28rem#fff,28.2vw 49.9vh 0 -0.1rem#fff,82.7vw 74.3vh 0 -0.44rem#fff,59.3vw 15.3vh 0 -0.1rem#fff,52.3vw 69vh 0 -0.13rem#fff,51.9vw 87.5vh 0 -0.34rem#fff,79.8vw 62.7vh 0 -0.09rem#fff,16.9vw 37.1vh 0 -0.34rem#fff,11.6vw 3.4vh 0 -0.33rem#fff,79.8vw 36.2vh 0 -0.14rem#fff,92.7vw 40.4vh 0 -0.29rem#fff,13.9vw 36.3vh 0 -0.01rem#fff,28.9vw 20.7vh 0 -0.43rem#fff,26.1vw 11.6vh 0 -0.47rem#fff,10.2vw 18.1vh 0 -0.19rem#fff,55.8vw 27.4vh 0 -0.22rem#fff;
+  animation-duration: 6s;
+}
+
+.layer1.a {
+  animation-delay: -3s;
+}
+
+.layer2 {
+  width: 1.2rem;
+  height: 1.2rem;
+  filter: blur(3px);
+  box-shadow: 67.1vw 62.5vh 0 -0.41rem#fff,9.5vw 86.6vh 0 -0.32rem#fff,31.4vw 68.5vh 0 -0.31rem#fff,15.2vw 8.8vh 0 -0.33rem#fff,71.8vw 60.2vh 0 -0.06rem#fff,88.2vw 86.2vh 0 -0.33rem#fff,99.2vw 5.4vh 0 -0.27rem#fff,14.1vw 36.4vh 0 -0.37rem#fff,34.2vw 32.2vh 0 -0.18rem#fff,41.5vw 78.5vh 0 -0.38rem#fff,40.6vw 86.2vh 0 -0.43rem#fff,82.7vw 45vh 0 -0.21rem#fff,99.5vw 72.2vh 0 -0.45rem#fff,68.9vw 38.8vh 0 -0.47rem#fff,11.7vw 7.8vh 0 -0.17rem#fff,12.1vw 98.6vh 0 -0.07rem#fff,6.8vw 85.1vh 0 -0.07rem#fff,24.6vw 7.8vh 0 -0.14rem#fff,10.6vw 21.3vh 0 -0.03rem#fff,42.2vw 49.5vh 0 -0.18rem#fff,72.1vw 66.8vh 0 -0.24rem#fff,18.2vw 60.2vh 0 -0.07rem#fff,54.4vw 0.6vh 0 -0.21rem#fff,28vw 78vh 0 -0.31rem#fff,77vw 98.5vh 0 -0.05rem#fff,1.5vw 72.5vh 0 -0.33rem#fff,98.1vw 33vh 0 -0.25rem#fff,11vw 55.1vh 0 -0.12rem#fff,22.7vw 41.7vh 0 -0.49rem#fff,5.3vw 85.9vh 0 -0.22rem#fff,11.2vw 39.9vh 0 -0.19rem#fff,67vw 31.4vh 0 -0.29rem#fff,34.4vw 21.1vh 0 -0.25rem#fff,5.1vw 56.6vh 0 -0.1rem#fff,47.1vw 50.2vh 0 -0.05rem#fff,28.6vw 64.7vh 0 -0.4rem#fff,59.1vw 53.6vh 0 -0.41rem#fff,4.8vw 57.1vh 0 -0.35rem#fff,39.6vw 18.8vh 0 -0.39rem#fff,46.8vw 0.2vh 0 -0.46rem#fff,74.7vw 92.5vh 0 -0.39rem#fff,90.4vw 30vh 0 -0.27rem#fff,46.5vw 92.4vh 0 -0.14rem#fff,76.6vw 83.3vh 0 -0.06rem#fff,95.5vw 6.6vh 0 -0.13rem#fff,68.3vw 69.8vh 0 -0.29rem#fff,77.5vw 84.5vh 0 -0.21rem#fff,11.8vw 18.6vh 0 -0.18rem#fff,34.1vw 11.3vh 0 -0.31rem#fff,77.3vw 75.1vh 0 -0.21rem#fff,76.4vw 87.9vh 0 -0.43rem#fff,73.4vw 48.7vh 0 -0.34rem#fff,18.1vw 39.5vh 0 -0.02rem#fff,90.9vw 9.5vh 0 -0.19rem#fff,56.2vw 21.5vh 0 -0.28rem#fff,18.6vw 5.4vh 0 -0.21rem#fff,75.2vw 74vh 0 -0.06rem#fff,36.1vw 28.4vh 0 -0.39rem#fff,71.1vw 12.9vh 0 -0.25rem#fff,45.5vw 64.9vh 0 -0.21rem#fff,71.9vw 29.2vh 0 -0.12rem#fff,7.8vw 92.4vh 0 -0.3rem#fff,91.8vw 83.7vh 0 -0.3rem#fff,13.1vw 90.5vh 0 -0.03rem#fff,24.4vw 11.5vh 0 -0.09rem#fff,65.7vw 56.8vh 0 -0.24rem#fff,16.7vw 3vh 0 -0.3rem#fff,70.9vw 20.6vh 0 -0.41rem#fff,20.9vw 59.3vh 0 -0.42rem#fff,3.8vw 91.8vh 0 -0.17rem#fff,37.6vw 30.5vh 0 -0.37rem#fff,10.3vw 28.1vh 0 -0.21rem#fff,88.1vw 48.9vh 0 -0.08rem#fff,57.7vw 30.6vh 0 -0.29rem#fff,45.1vw 86.9vh 0 -0.41rem#fff,91.4vw 20.1vh 0 -0.13rem#fff,81.8vw 41.9vh 0 -0.12rem#fff,79.5vw 99.6vh 0 -0.27rem#fff,67.6vw 88.3vh 0 -0.5rem#fff,59.9vw 52.7vh 0 -0.32rem#fff,74.3vw 41.6vh 0 -0.49rem#fff,25.7vw 33.7vh 0 -0.25rem#fff,6.3vw 18vh 0 -0.4rem#fff,41.4vw 51.1vh 0 -0.06rem#fff,63.9vw 84.7vh 0 -0.26rem#fff,73.7vw 76.2vh 0 -0.4rem#fff,79.8vw 4.6vh 0 -0.08rem#fff,64.9vw 37.9vh 0 -0.12rem#fff,72.2vw 81.5vh 0 -0.34rem#fff,28vw 6.1vh 0 -0.17rem#fff,62.9vw 17.3vh 0 -0.43rem#fff,80.5vw 47.7vh 0 -0.02rem#fff,61.5vw 33.8vh 0 -0.06rem#fff,29.2vw 4.9vh 0 -0.38rem#fff,82.2vw 54.4vh 0 -0.16rem#fff,76vw 88.9vh 0 -0.13rem#fff,96.6vw 20.5vh 0 -0.23rem#fff,77.5vw 39.2vh 0 -0.28rem#fff,70.2vw 14.7vh 0 -0.27rem#fff,2.2vw 83.6vh 0 -0.35rem#fff,50.7vw 65.7vh 0 -0.33rem#fff,55.5vw 1.3vh 0 -0.36rem#fff,40.4vw 39.7vh 0 -0.3rem#fff,53.9vw 40.2vh 0 -0.37rem#fff,66.9vw 28.8vh 0 -0.23rem#fff,29.4vw 26.1vh 0 -0.36rem#fff,79vw 43.7vh 0 -0.09rem#fff,60.5vw 91.2vh 0 -0.13rem#fff,100vw 30.7vh 0 -0.29rem#fff,34.5vw 99.6vh 0 -0.19rem#fff,67.4vw 59.7vh 0 -0.09rem#fff,17.5vw 76.7vh 0 -0.23rem#fff,29vw 36.5vh 0 -0.36rem#fff,39.2vw 68.6vh 0 -0.26rem#fff,82.2vw 29.4vh 0 -0.04rem#fff,4.3vw 28.8vh 0 -0.29rem#fff,79.2vw 54.9vh 0 -0.37rem#fff,61vw 55.4vh 0 -0.14rem#fff,73.4vw 23.9vh 0 -0.39rem#fff,31.1vw 20.6vh 0 -0.13rem#fff,93.6vw 55.1vh 0 -0.34rem#fff,64.1vw 26.7vh 0 -0.1rem#fff,56.4vw 10.4vh 0 -0.26rem#fff,63.6vw 65.8vh 0 -0.11rem#fff,8.4vw 68.9vh 0 -0.04rem#fff,5.2vw 33.3vh 0 -0.22rem#fff,97.2vw 2.6vh 0 -0.22rem#fff,8.6vw 4.2vh 0 -0.37rem#fff,85.5vw 11.7vh 0 -0.37rem#fff,6.6vw 75vh 0 -0.42rem#fff,49.7vw 43.8vh 0 -0.13rem#fff,79.9vw 65.4vh 0 -0.12rem#fff,61.3vw 70.4vh 0 -0.03rem#fff,97.5vw 62.5vh 0 -0.36rem#fff,29.7vw 85.9vh 0 -0.04rem#fff,3vw 85.3vh 0 -0.48rem#fff,63.8vw 91.6vh 0 -0.34rem#fff,61.2vw 43.6vh 0 -0.36rem#fff,0.3vw 97.9vh 0 -0.02rem#fff,69.3vw 51.9vh 0 -0.28rem#fff,81.3vw 61.3vh 0 -0.06rem#fff,44.1vw 93.7vh 0 -0.26rem#fff,85.1vw 2vh 0 -0.14rem#fff,85.7vw 90.5vh 0 -0.18rem#fff,29.3vw 31.8vh 0 -0.43rem#fff,45vw 83.8vh 0 -0.01rem#fff,68.2vw 80.3vh 0 -0.23rem#fff,74.5vw 84.8vh 0 -0.1rem#fff,63.1vw 15.7vh 0 -0.29rem#fff,28.2vw 23.4vh 0 -0.41rem#fff,63.5vw 37.3vh 0 -0.09rem#fff,64.2vw 83.2vh 0 -0.27rem#fff,77.9vw 33.6vh 0 -0.1rem#fff,71.6vw 35vh 0 -0.3rem#fff,1.2vw 77.3vh 0 -0.3rem#fff,69.4vw 37.3vh 0 -0.41rem#fff,34.8vw 10.1vh 0 -0.47rem#fff,35.1vw 61vh 0 -0.01rem#fff,91.8vw 87.3vh 0 -0.43rem#fff,34.1vw 61.7vh 0 -0.39rem#fff,41.4vw 89.2vh 0 -0.3rem#fff,26.7vw 14.2vh 0 -0.22rem#fff,17.5vw 13.8vh 0 -0.26rem#fff,30.1vw 51.9vh 0 -0.06rem#fff,32.1vw 19.7vh 0 -0.39rem#fff,86.5vw 65.1vh 0 -0.4rem#fff,2.5vw 6.4vh 0 -0.22rem#fff,61.9vw 45.8vh 0 -0.44rem#fff,48.3vw 20.7vh 0 -0.17rem#fff,68.7vw 72.4vh 0 -0.39rem#fff,76.1vw 23.4vh 0 -0.23rem#fff,95.1vw 99.1vh 0 -0.45rem#fff,24.1vw 4.5vh 0 -0.12rem#fff,87.2vw 43.1vh 0 -0.05rem#fff,61.6vw 56.2vh 0 -0.33rem#fff,50.4vw 32.3vh 0 -0.46rem#fff,85.1vw 58.4vh 0 -0.39rem#fff,69.9vw 0.4vh 0 -0.3rem#fff,53.9vw 3.3vh 0 -0.34rem#fff,85.3vw 32vh 0 -0.47rem#fff,76.2vw 91.8vh 0 -0.15rem#fff,97.4vw 8vh 0 -0.27rem#fff,18.6vw 66.8vh 0 -0.41rem#fff,8.9vw 6.5vh 0 -0.36rem#fff,32.9vw 65.1vh 0 -0.18rem#fff,84.7vw 63.2vh 0 -0.18rem#fff,86vw 14.7vh 0 -0.17rem#fff,18vw 44.3vh 0 -0.13rem#fff,1.1vw 53.5vh 0 -0.48rem#fff,88.1vw 44.7vh 0 -0.39rem#fff,19.9vw 41vh 0 -0.43rem#fff,2.3vw 19.5vh 0 -0.41rem#fff,0.7vw 62.8vh 0 -0.17rem#fff,45.9vw 87.1vh 0 -0.18rem#fff,7.6vw 59.4vh 0 -0.44rem#fff,96.8vw 84.5vh 0 -0.25rem#fff,90.2vw 73.6vh 0 -0.01rem#fff,11.9vw 0.5vh 0 -0.5rem#fff,65vw 92.9vh 0 -0.04rem#fff,33.7vw 29.3vh 0 -0.26rem#fff,27.7vw 66.7vh 0 -0.13rem#fff,60.6vw 18.7vh 0 -0.17rem#fff,63.6vw 58.5vh 0 -0.5rem#fff,73.3vw 14.9vh 0 -0.26rem#fff,80.7vw 89.4vh 0 -0.16rem#fff,17.5vw 76.9vh 0 -0.05rem#fff,73.1vw 65vh 0 -0.23rem#fff,22.1vw 27.3vh 0 -0.18rem#fff,70.8vw 15.4vh 0 -0.33rem#fff,66.1vw 23.3vh 0 -0.45rem#fff,23.1vw 8.6vh 0 -0.46rem#fff,15.9vw 15.1vh 0 -0.07rem#fff,83.5vw 84.7vh 0 -0.14rem#fff,55.5vw 64.4vh 0 -0.3rem#fff,83.2vw 89.3vh 0 -0.5rem#fff,39.4vw 39.5vh 0 -0.04rem#fff,9.6vw 75.8vh 0 -0.44rem#fff,38.7vw 50.9vh 0 -0.1rem#fff,53.8vw 48.3vh 0 -0.03rem#fff,0.1vw 14.2vh 0 -0.18rem#fff,3.2vw 38.8vh 0 -0.41rem#fff,73.1vw 56.7vh 0 -0.03rem#fff,45.4vw 36.5vh 0 -0.1rem#fff,89.3vw 65.9vh 0 -0.26rem#fff,82vw 96.7vh 0 -0.33rem#fff,98.8vw 0.4vh 0 -0.16rem#fff,9.9vw 18.3vh 0 -0.39rem#fff,80.6vw 11.8vh 0 -0.47rem#fff,81.6vw 85.8vh 0 -0.02rem#fff,97.4vw 90.4vh 0 -0.02rem#fff,15.2vw 64.2vh 0 -0.31rem#fff,23.1vw 34.8vh 0 -0.09rem#fff,73.7vw 97.7vh 0 -0.09rem#fff,64.4vw 62.4vh 0 -0.26rem#fff,73.8vw 28.7vh 0 -0.31rem#fff,18.4vw 15.2vh 0 -0.21rem#fff,93.2vw 40.7vh 0 -0.06rem#fff,85.2vw 9.5vh 0 -0.09rem#fff,21.6vw 20.6vh 0 -0.46rem#fff,93.6vw 68.7vh 0 -0.06rem#fff,23.1vw 94vh 0 -0.22rem#fff,35.2vw 67.6vh 0 -0.05rem#fff,28.2vw 82.5vh 0 -0.31rem#fff,4.1vw 1.1vh 0 -0.41rem#fff,21vw 79.5vh 0 -0.28rem#fff,71vw 4.5vh 0 -0.39rem#fff,67.1vw 58.9vh 0 -0.2rem#fff,73.1vw 83.3vh 0 -0.08rem#fff,56vw 72vh 0 -0.28rem#fff,46.3vw 8.3vh 0 -0.44rem#fff,2.3vw 69.7vh 0 -0.31rem#fff,90.6vw 71.7vh 0 -0.31rem#fff,61.6vw 94.2vh 0 -0.12rem#fff,7vw 89vh 0 -0.16rem#fff,20.8vw 64.9vh 0 -0.21rem#fff,21.4vw 72.4vh 0 -0.25rem#fff,38.6vw 68.4vh 0 -0.41rem#fff,3.1vw 98vh 0 -0.41rem#fff,6.8vw 37.6vh 0 -0.31rem#fff,67.8vw 72.1vh 0 -0.41rem#fff,2.3vw 48.5vh 0 -0.24rem#fff,64.4vw 60.4vh 0 -0.1rem#fff,59vw 76.2vh 0 -0.1rem#fff,75vw 92.6vh 0 -0.39rem#fff,99.8vw 30.5vh 0 -0.2rem#fff,22.5vw 90vh 0 -0.1rem#fff,6.8vw 37.6vh 0 -0.24rem#fff,94.1vw 99.6vh 0 -0.32rem#fff,64.2vw 43.9vh 0 -0.33rem#fff,44.2vw 96.1vh 0 -0.3rem#fff,1.8vw 4.1vh 0 -0.48rem#fff,56.3vw 48.9vh 0 -0.34rem#fff,90.5vw 12.7vh 0 -0.01rem#fff,88vw 91.2vh 0 -0.17rem#fff,39.1vw 42.1vh 0 -0.3rem#fff,75.2vw 80.1vh 0 -0.15rem#fff,75.1vw 16.7vh 0 -0.46rem#fff,21.9vw 35.1vh 0 -0.17rem#fff,91.8vw 28.2vh 0 -0.19rem#fff,17.7vw 64.4vh 0 -0.46rem#fff,39.3vw 53.7vh 0 -0.05rem#fff,43.7vw 67.6vh 0 -0.43rem#fff,32.2vw 67.2vh 0 -0.19rem#fff,19vw 43.1vh 0 -0.07rem#fff,33.8vw 6.8vh 0 -0.11rem#fff,45.2vw 97.8vh 0 -0.22rem#fff,94.9vw 9.9vh 0 -0.11rem#fff,17.8vw 30.2vh 0 -0.14rem#fff,63.8vw 93.4vh 0 -0.46rem#fff,24.4vw 45.2vh 0 -0.21rem#fff,29.2vw 22.7vh 0 -0.26rem#fff,13.6vw 42.8vh 0 -0.22rem#fff,69.3vw 24.3vh 0 -0.18rem#fff,73.6vw 47.5vh 0 -0.2rem#fff,48.6vw 37vh 0 -0.03rem#fff,98.6vw 76.2vh 0 -0.22rem#fff,33.4vw 35.4vh 0 -0.09rem#fff,12.7vw 40.9vh 0 -0.39rem#fff,23.2vw 1.6vh 0 -0.07rem#fff,27.3vw 46.3vh 0 -0.13rem#fff;
+  animation-duration: 8s;
+}
+
+.layer2.a {
+  animation-delay: -4s;
+}
+
+.layer3 {
+  width: 0.8rem;
+  height: 0.8rem;
+  filter: blur(6px);
+  box-shadow: 67.9vw 21.4vh 0 -0.4rem#fff,99.1vw 21.5vh 0 -0.4rem#fff,25.8vw 53.6vh 0 -0.41rem#fff,38.2vw 16.9vh 0 -0.14rem#fff,42vw 79.5vh 0 -0.49rem#fff,89.2vw 14.8vh 0 -0.04rem#fff,59.6vw 38.5vh 0 -0.01rem#fff,2.9vw 9.7vh 0 -0.47rem#fff,37.9vw 40.5vh 0 -0.4rem#fff,66.2vw 92.6vh 0 -0.2rem#fff,25vw 3.2vh 0 -0.38rem#fff,79.6vw 58.1vh 0 -0.25rem#fff,15.9vw 38vh 0 -0.25rem#fff,51.5vw 36.4vh 0 -0.35rem#fff,82.1vw 53.4vh 0 -0.3rem#fff,81.2vw 70.6vh 0 -0.18rem#fff,86.2vw 90.7vh 0 -0.02rem#fff,10vw 63.7vh 0 -0.22rem#fff,21.9vw 47.7vh 0 -0.23rem#fff,62vw 69.7vh 0 -0.09rem#fff,55.5vw 97.5vh 0 -0.4rem#fff,86.4vw 39.4vh 0 -0.22rem#fff,40.5vw 43.5vh 0 -0.05rem#fff,52.4vw 61vh 0 -0.21rem#fff,52.6vw 58.3vh 0 -0.33rem#fff,2.7vw 16.8vh 0 -0.11rem#fff,99.3vw 95.2vh 0 -0.24rem#fff,54.1vw 45.4vh 0 -0.39rem#fff,36.7vw 39vh 0 -0.13rem#fff,71.6vw 37.7vh 0 -0.13rem#fff,66.9vw 84.2vh 0 -0.39rem#fff,8.4vw 17.4vh 0 -0.2rem#fff,6.2vw 37.5vh 0 -0.29rem#fff,91.8vw 5.9vh 0 -0.18rem#fff,41.7vw 6.2vh 0 -0.31rem#fff,22vw 70.1vh 0 -0.26rem#fff,8.9vw 60.7vh 0 -0.47rem#fff,50.2vw 86.3vh 0 -0.49rem#fff,39.7vw 41.3vh 0 -0.13rem#fff,63.6vw 9.5vh 0 -0.16rem#fff,91.7vw 7vh 0 -0.49rem#fff,82.1vw 75.1vh 0 -0.35rem#fff,41.9vw 39.5vh 0 -0.02rem#fff,19.6vw 89.2vh 0 -0.22rem#fff,64.7vw 11vh 0 -0.03rem#fff,11.2vw 77.5vh 0 -0.41rem#fff,91.5vw 32.5vh 0 -0.29rem#fff,37.8vw 84.3vh 0 -0.43rem#fff,4.5vw 16.3vh 0 -0.05rem#fff,7.7vw 1.1vh 0 -0.48rem#fff,96.6vw 11.4vh 0 -0.48rem#fff,16.1vw 33.5vh 0 -0.27rem#fff,70.2vw 47.8vh 0 -0.44rem#fff,0.7vw 46.9vh 0 -0.42rem#fff,53.4vw 20.1vh 0 -0.15rem#fff,39.1vw 67.5vh 0 -0.09rem#fff,39.8vw 67.6vh 0 -0.33rem#fff,66.9vw 63.7vh 0 -0.5rem#fff,87.2vw 42.6vh 0 -0.33rem#fff,16vw 75.3vh 0 -0.41rem#fff,19.6vw 8.3vh 0 -0.01rem#fff,95.9vw 56.9vh 0 -0.14rem#fff,40.7vw 82.2vh 0 -0.08rem#fff,71.6vw 64.1vh 0 -0.12rem#fff,49.6vw 63.7vh 0 -0.48rem#fff,77.7vw 57.1vh 0 -0.2rem#fff,12.2vw 73.3vh 0 -0.03rem#fff,67vw 57.4vh 0 -0.28rem#fff,7.8vw 39.3vh 0 -0.08rem#fff,75.2vw 2.4vh 0 -0.07rem#fff,9.3vw 64.3vh 0 -0.43rem#fff,4.7vw 60.7vh 0 -0.36rem#fff,45.8vw 78.6vh 0 -0.39rem#fff,27.1vw 29.5vh 0 -0.32rem#fff,79.2vw 51.2vh 0 -0.35rem#fff,79.9vw 98.3vh 0 -0.5rem#fff,56.8vw 27.8vh 0 -0.2rem#fff,82.8vw 33.6vh 0 -0.16rem#fff,2vw 40.4vh 0 -0.03rem#fff,65.2vw 96vh 0 -0.44rem#fff,96.5vw 47.8vh 0 -0.41rem#fff,35.9vw 64.9vh 0 -0.3rem#fff,24.2vw 66.3vh 0 -0.23rem#fff,62.7vw 64vh 0 -0.05rem#fff,7.2vw 22.6vh 0 -0.21rem#fff,54vw 6.6vh 0 -0.43rem#fff,44.5vw 92vh 0 -0.18rem#fff,92.9vw 65.4vh 0 -0.19rem#fff,87.8vw 34.5vh 0 -0.16rem#fff,35.5vw 1.1vh 0 -0.03rem#fff,62.7vw 27.4vh 0 -0.19rem#fff,64vw 19.9vh 0 -0.11rem#fff,18.6vw 10.4vh 0 -0.36rem#fff,95.8vw 94.3vh 0 -0.19rem#fff,65.4vw 95.6vh 0 -0.35rem#fff,41.6vw 44.2vh 0 -0.25rem#fff,58.3vw 81.1vh 0 -0.06rem#fff,51.4vw 38.9vh 0 -0.2rem#fff,83.7vw 6.8vh 0 -0.09rem#fff,33.7vw 89.3vh 0 -0.24rem#fff,70.9vw 26.7vh 0 -0.33rem#fff,0.6vw 99.9vh 0 -0.24rem#fff,74.8vw 59vh 0 -0.14rem#fff,83.6vw 95.4vh 0 -0.03rem#fff,48.7vw 23.2vh 0 -0.09rem#fff,0.5vw 76.5vh 0 -0.47rem#fff,97.3vw 57.4vh 0 -0.02rem#fff,97.4vw 9vh 0 -0.3rem#fff,18.6vw 82.2vh 0 -0.37rem#fff,50.3vw 2.6vh 0 -0.24rem#fff,7.6vw 29.1vh 0 -0.13rem#fff,32.4vw 87.4vh 0 -0.49rem#fff,53.8vw 85.2vh 0 -0.03rem#fff,53.1vw 66.3vh 0 -0.28rem#fff,45.7vw 22.3vh 0 -0.07rem#fff,39.2vw 46.8vh 0 -0.1rem#fff,31.3vw 78.3vh 0 -0.5rem#fff,56.7vw 3.2vh 0 -0.06rem#fff,90.2vw 32.1vh 0 -0.39rem#fff,41.3vw 84.2vh 0 -0.46rem#fff,0.6vw 28.3vh 0 -0.01rem#fff,16.1vw 70.7vh 0 -0.07rem#fff,74.9vw 38.2vh 0 -0.22rem#fff,39.9vw 71.9vh 0 -0.18rem#fff,39.7vw 1.3vh 0 -0.07rem#fff,29.8vw 82.5vh 0 -0.39rem#fff,27vw 84.7vh 0 -0.2rem#fff,72.8vw 90.2vh 0 -0.16rem#fff,17.2vw 32.8vh 0 -0.3rem#fff,62.2vw 95.4vh 0 -0.43rem#fff,63.3vw 2vh 0 -0.07rem#fff,0.8vw 90.6vh 0 -0.27rem#fff,1.3vw 6.4vh 0 -0.38rem#fff,97.8vw 5.3vh 0 -0.41rem#fff,20.7vw 33.3vh 0 -0.16rem#fff,23.4vw 83.9vh 0 -0.44rem#fff,37.9vw 78.7vh 0 -0.36rem#fff,83.3vw 72.7vh 0 -0.42rem#fff,59.9vw 16vh 0 -0.05rem#fff,81.6vw 32.8vh 0 -0.28rem#fff,79.2vw 31.1vh 0 -0.04rem#fff,58.2vw 73.8vh 0 -0.37rem#fff,5vw 22.5vh 0 -0.15rem#fff,74.7vw 32.3vh 0 -0.49rem#fff,4.8vw 86.8vh 0 -0.11rem#fff,50.6vw 59vh 0 -0.23rem#fff,27.9vw 68.6vh 0 -0.34rem#fff,63.1vw 28.4vh 0 -0.34rem#fff,77.9vw 99.4vh 0 -0.17rem#fff,38.5vw 48.3vh 0 -0.06rem#fff,54.4vw 5.1vh 0 -0.06rem#fff,80.4vw 73.9vh 0 -0.1rem#fff,26vw 97.4vh 0 -0.18rem#fff,78.2vw 78.9vh 0 -0.5rem#fff,21.4vw 88vh 0 -0.09rem#fff,1vw 89.4vh 0 -0.01rem#fff,90.4vw 47.6vh 0 -0.23rem#fff,11.8vw 10.2vh 0 -0.36rem#fff,83.6vw 8.7vh 0 -0.25rem#fff,18.3vw 99.9vh 0 -0.35rem#fff,3.1vw 42.9vh 0 -0.11rem#fff,89.9vw 16.1vh 0 -0.08rem#fff,49.5vw 15.4vh 0 -0.2rem#fff,10vw 3.9vh 0 -0.39rem#fff,50.4vw 18.7vh 0 -0.41rem#fff,62.2vw 30.5vh 0 -0.21rem#fff,32.4vw 76.6vh 0 -0.38rem#fff,0.6vw 63.1vh 0 -0.47rem#fff,9vw 35.7vh 0 -0.48rem#fff,6.7vw 80.2vh 0 -0.37rem#fff,30.1vw 16.1vh 0 -0.48rem#fff,33.2vw 60vh 0 -0.42rem#fff,71.4vw 50.6vh 0 -0.34rem#fff,30vw 60vh 0 -0.14rem#fff,93.7vw 1.7vh 0 -0.47rem#fff,22.7vw 56.1vh 0 -0.33rem#fff,77.2vw 78.7vh 0 -0.48rem#fff,46.6vw 28.8vh 0 -0.1rem#fff,61.9vw 78.4vh 0 -0.28rem#fff,64.6vw 52.9vh 0 -0.38rem#fff,43.6vw 57.4vh 0 -0.26rem#fff,63.4vw 12.4vh 0 -0.43rem#fff,46.6vw 17.5vh 0 -0.34rem#fff,92.8vw 21.9vh 0 -0.27rem#fff,45.7vw 96.7vh 0 -0.5rem#fff,80.4vw 74.9vh 0 -0.22rem#fff,80.7vw 40.9vh 0 -0.18rem#fff,36.4vw 97.2vh 0 -0.26rem#fff,91vw 79.9vh 0 -0.14rem#fff,58.9vw 48.7vh 0 -0.32rem#fff,11.9vw 41.4vh 0 -0.32rem#fff,33.9vw 28.1vh 0 -0.04rem#fff,91.8vw 10.4vh 0 -0.34rem#fff,71.4vw 90.5vh 0 -0.38rem#fff,81.4vw 81.4vh 0 -0.34rem#fff,62.8vw 91.7vh 0 -0.08rem#fff,88.9vw 37.7vh 0 -0.36rem#fff,61vw 50.7vh 0 -0.41rem#fff,23.7vw 76.7vh 0 -0.21rem#fff,84.6vw 49.5vh 0 -0.1rem#fff,6.3vw 82.2vh 0 -0.08rem#fff,15.7vw 69vh 0 -0.48rem#fff,86.6vw 31.2vh 0 -0.32rem#fff,80.2vw 90.1vh 0 -0.33rem#fff,58.8vw 59.8vh 0 -0.23rem#fff,75.5vw 8.8vh 0 -0.49rem#fff,13.6vw 17.2vh 0 -0.49rem#fff,32.3vw 16.9vh 0 -0.43rem#fff,44.6vw 42.9vh 0 -0.01rem#fff,69.2vw 20.1vh 0 -0.31rem#fff,93.1vw 55.3vh 0 -0.19rem#fff,68.3vw 71.7vh 0 -0.04rem#fff,99.1vw 32.5vh 0 -0.24rem#fff,11.6vw 93.8vh 0 -0.16rem#fff,92.7vw 18.9vh 0 -0.38rem#fff,85.8vw 69vh 0 -0.08rem#fff,16.1vw 1.4vh 0 -0.37rem#fff,53.2vw 83.5vh 0 -0.02rem#fff,74.7vw 63.6vh 0 -0.5rem#fff,88vw 85.3vh 0 -0.3rem#fff,66.5vw 16vh 0 -0.15rem#fff,45.4vw 57.9vh 0 -0.05rem#fff,86.3vw 28.9vh 0 -0.38rem#fff,7.9vw 45.6vh 0 -0.09rem#fff,26.3vw 16.2vh 0 -0.05rem#fff,63.2vw 47.3vh 0 -0.05rem#fff,38.7vw 73.9vh 0 -0.28rem#fff,28.5vw 45.2vh 0 -0.49rem#fff,71.7vw 28.9vh 0 -0.33rem#fff,66.4vw 31.9vh 0 -0.28rem#fff,84.2vw 50.9vh 0 -0.39rem#fff,27.3vw 48.3vh 0 -0.33rem#fff,35.5vw 6.7vh 0 -0.05rem#fff,18.9vw 18.1vh 0 -0.11rem#fff,17.8vw 36vh 0 -0.02rem#fff,39.2vw 29.8vh 0 -0.36rem#fff,52.5vw 20.1vh 0 -0.2rem#fff,75.1vw 87.9vh 0 -0.26rem#fff,10vw 2.2vh 0 -0.42rem#fff,9vw 10.6vh 0 -0.17rem#fff,74.8vw 3.8vh 0 -0.11rem#fff,2.3vw 54.4vh 0 -0.03rem#fff,91.5vw 71.8vh 0 -0.19rem#fff,6.2vw 35.8vh 0 -0.01rem#fff,55.6vw 93.2vh 0 -0.17rem#fff,91.9vw 96.1vh 0 -0.2rem#fff,36.4vw 65.6vh 0 -0.24rem#fff,36.8vw 27vh 0 -0.02rem#fff,41.9vw 10.6vh 0 -0.16rem#fff,56.6vw 78.6vh 0 -0.01rem#fff,20vw 91.3vh 0 -0.21rem#fff,67.2vw 94.3vh 0 -0.48rem#fff,38.8vw 47.5vh 0 -0.02rem#fff,49.6vw 68.9vh 0 -0.24rem#fff,25.3vw 37.8vh 0 -0.13rem#fff,96.1vw 23.4vh 0 -0.11rem#fff,73.6vw 41.5vh 0 -0.23rem#fff,88.2vw 8.1vh 0 -0.26rem#fff,85.3vw 8.1vh 0 -0.29rem#fff,16.1vw 78.4vh 0 -0.13rem#fff,28.5vw 40.1vh 0 -0.28rem#fff,52.3vw 51.8vh 0 -0.48rem#fff,7.9vw 58.5vh 0 -0.11rem#fff,66.8vw 44.5vh 0 -0.36rem#fff,55.6vw 77vh 0 -0.29rem#fff,93.5vw 23.4vh 0 -0.14rem#fff,97.1vw 57.6vh 0 -0.14rem#fff,1.5vw 94.5vh 0 -0.07rem#fff,9.5vw 5.7vh 0 -0.01rem#fff,34.3vw 21.7vh 0 -0.1rem#fff,28.8vw 75.9vh 0 -0.5rem#fff,10.2vw 25.3vh 0 -0.15rem#fff,56.1vw 42.5vh 0 -0.38rem#fff,51.1vw 48.1vh 0 -0.5rem#fff,9.2vw 46.4vh 0 -0.06rem#fff,45.2vw 46.9vh 0 -0.16rem#fff,39.4vw 98.4vh 0 -0.5rem#fff,1.1vw 56.2vh 0 -0.21rem#fff,90.4vw 64vh 0 -0.09rem#fff,89.1vw 44.2vh 0 -0.06rem#fff,94vw 34.2vh 0 -0.01rem#fff,73.5vw 77.2vh 0 -0.1rem#fff,12.6vw 57.9vh 0 -0.14rem#fff,22.6vw 6.7vh 0 -0.46rem#fff,19.3vw 78.9vh 0 -0.43rem#fff,26vw 33.1vh 0 -0.44rem#fff,59.8vw 58.5vh 0 -0.18rem#fff,76.3vw 66.5vh 0 -0.43rem#fff,95.1vw 12.9vh 0 -0.28rem#fff,61.6vw 64.1vh 0 -0.42rem#fff,61.3vw 96.9vh 0 -0.1rem#fff,62.2vw 64.7vh 0 -0.19rem#fff,88.2vw 96.6vh 0 -0.07rem#fff,98.9vw 40.7vh 0 -0.08rem#fff,43vw 15.2vh 0 -0.43rem#fff,7.1vw 53.6vh 0 -0.15rem#fff,92.4vw 69.6vh 0 -0.45rem#fff,94.9vw 58.8vh 0 -0.5rem#fff,78.4vw 84.6vh 0 -0.25rem#fff,7.6vw 85vh 0 -0.05rem#fff;
+  animation-duration: 10s;
+}
+
+.layer3.a {
+  animation-delay: -5s;
+}
+
+@keyframes fall {
+  100% {
+    transform: translateY(200vh);
+  }
+}
+	  @-webkit-keyframes rotation {
+      from {
+          -webkit-transform: rotateY(0);
+          -moz-transform: rotateY(0);
+          -ms-transform: rotateY(0);
+          -o-transform: rotateY(0);
+          transform: rotateY(0);
+      }
+      to {
+          -webkit-transform: rotateY(360deg);
+          -moz-transform: rotateY(360deg);
+          -ms-transform: rotateY(360deg);
+          -o-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+        }
+        }
+      
+ .star {
+    width: 0;
+      height: 0;
+	
+	 
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 25px solid gold;
+      position: relative;
+      padding-bottom:  8px;
+       
+    /* ------ glow effect --------- */
+    border-radius: 30%;
+    background-color: #f4f7a8;
+    box-shadow:
+          0 0 60px 30px #ffffff,  
+          0 0 100px 60px #ff00ff, 
+          0 0 140px 90px #00ffff; 
+	 
+  } 
+  
+  .star:after {
+    width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 20px solid #ffd700;
+      position: absolute;
+      content: "";
+      top: 18px;
+      left: -15px;
+ }
+  
+  /* -------- tree -----------  */
+  .tree {
+      -webkit-animation: rotation 20s infinite linear;
+      -moz-animation: rotation 20s infinite linear;
+      -ms-animation: rotation 20s infinite linear;
+      -o-animation: rotation 20s infinite linear;
+      animation: rotation 20s infinite linear;
+
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+  }
+  
+  
+  .branch:nth-child(2) {
+      -webkit-transform: rotateY(22deg);
+      -moz-transform: rotateY(22deg);
+      -ms-transform: rotateY(22deg);
+      -o-transform: rotateY(22deg);
+      transform: rotateY(22deg);
+  }
+  
+  .branch:nth-child(3) {
+      -webkit-transform: rotateY(45deg);
+      -moz-transform: rotateY(45deg);
+      -ms-transform: rotateY(45deg);
+      -o-transform: rotateY(45deg);
+      transform: rotateY(45deg);
+  }
+  
+  .branch:nth-child(4) {
+      -webkit-transform: rotateY(67deg);
+      -moz-transform: rotateY(67deg);
+      -ms-transform: rotateY(67deg);
+      -o-transform: rotateY(67deg);
+      transform: rotateY(67deg);
+  }
+  
+  .branch:nth-child(5) {
+      -webkit-transform: rotateY(90deg);
+      -moz-transform: rotateY(90deg);
+      -ms-transform: rotateY(90deg);
+      -o-transform: rotateY(90deg);
+      transform: rotateY(90deg);
+  }
+  
+  .branch:nth-child(6) {
+      -webkit-transform: rotateY(112deg);
+      -moz-transform: rotateY(112deg);
+      -ms-transform: rotateY(112deg);
+      -o-transform: rotateY(112deg);
+      transform: rotateY(112deg);
+  }
+  
+  .branch:nth-child(7) {
+      -webkit-transform: rotateY(123deg);
+      -moz-transform: rotateY(123deg);
+      -ms-transform: rotateY(123deg);
+      -o-transform: rotateY(123deg);
+      transform: rotateY(123deg);
+  }
+  
+  .branch:nth-child(8) {
+      -webkit-transform: rotateY(135deg);
+      -moz-transform: rotateY(135deg);
+      -ms-transform: rotateY(135deg);
+      -o-transform: rotateY(135deg);
+      transform: rotateY(135deg);
+  }
+  
+  .branch:nth-child(9) {
+      -webkit-transform: rotateY(155deg);
+      -moz-transform: rotateY(155deg);
+      -ms-transform: rotateY(155deg);
+      -o-transform: rotateY(155deg);
+      transform: rotateY(155deg);
+  }
+  
+   
+  .branch > div {
+      border: 1em solid transparent;
+      content: "";
+      height: 0;
+      left: 50%;
+      margin-left: -1em;
+      position: absolute;
+      top: 0;
+      width: 0;
+	 z-index: 999!important;
+		  
+  }
+   
+  .branch:nth-child(1) > div {
+      border-bottom-color: #009900
+
+	  
+  }
+  
+  .branch:nth-child(2) > div {
+      border-bottom-color: #008800
+  }
+  
+  .branch:nth-child(3) > div {
+      border-bottom-color: #009400;
+  }
+  
+  .branch:nth-child(4) > div {
+      border-bottom-color: #007700 ;
+  }
+  
+  .branch:nth-child(5) > div {
+      border-bottom-color:#006600;
+  }
+  
+  .branch:nth-child(6) > div {
+      border-bottom-color: #005b00;
+  }
+  
+  .branch:nth-child(7) > div {
+      border-bottom-color:#005100;
+  }
+  
+  .branch:nth-child(8) > div {
+      border-bottom-color: #004700;
+  }
+  
+  .branch:nth-child(9) > div {
+      border-bottom-color:  #003d00
+  }
+  
+  .branch:nth-child(10) > div {
+      border-bottom-color: #002d00
+  }
+  
+  
+  
+  .branch > div:nth-child(2) {
+      font-size: 1.5em
+  }
+  
+  .branch > div:nth-child(3) {
+      font-size: 2em
+  }
+  
+  .branch > div:nth-child(4) {
+      font-size: 2.5em
+  }
+  
+  .branch > div:nth-child(5) {
+      font-size: 3em
+  }
+
+  .branch > div:nth-child(6) {
+    font-size: 4em
+}
+
+.branch > div:nth-child(7) {
+    font-size: 5.5em
+}
+
+.branch > div:nth-child(8) {
+    font-size: 5.5em
+}
+
+.branch > div:nth-child(9) {
+    font-size: 5.5em
+}
+
+.branch > div:nth-child(10) {
+    font-size: 5em
+}
+
+
+  /* ------- tree stump ----- */
+  .stump {
+    background-color: #562727;
+    height: 150px;
+    width: 23px;
+    
+    z-index: 6;
+
+  }
+
+/* -------- snowflakes ------- */
+.snowFlakes {
+    background-color: transparent;
+    background-image:  url(http://frontntweaks.com/images/snowFlake.png);
+    top: 0;left: 0;right: 0;bottom: 0;   
+    margin-top: 0;
+    position: absolute;
+    -webkit-animation: snow 40s linear infinite;
+    -moz-animation: snow 40s linear infinite;
+    -ms-animation: snow 40s linear infinite;
+    animation: snow 40s linear infinite;
+	z-index: -2; 
+}
+
+/*------ movement -------*/
+
+@keyframes snow { 
+  from
+    { background-position: 0 0, 0 0, 0 0 
+  }
+
+    to { background-position: 500px 1000px, 400px 400px, 300px 300px }
+}
+
+@-moz-keyframes snow { 
+    from
+    { background-position: 0 0, 0 0, 0 0 
+  }
+
+    to { background-position: 500px 1000px, 400px 400px, 300px 300px }
+}
+
+@-webkit-keyframes snow { 
+  from
+     { background-position: 0 0, 0 0, 0 0 }
+
+    to {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-ms-keyframes snow { 
+  from
+     { background-position: 0px 0px, 0px 0px, 0px 0px }
+
+    to { background-position: 500px 1000px, 400px 400px, 300px 300px }
+}
+	</style>
+</head>
+
+<body style="overflow: hidden; background-attachment: fixed; background-position: center; background-size: cover; ">
+    <div class="wrapper" style="overflow: hidden;">
+     <div class="snow layer1 a"></div>
+     <div class="snow layer1"></div> 
+
+     <div class="snow layer2 a"></div>
+     <div class="snow layer2"></div>
+     <div class="snow layer3 a"></div>
+ 
+     <div class="snow layer4 a"></div>
+     
+     <div class="snow layer4 "></div>
+</div>
+<div class="container p-0 m-0" style=" display: flex; justify-content: center;  font-size: 3.5em;top: 35%; position: absolute; left: 50%; transform: translate(-50%,-50%); z-index: 1000;" >
+
+  <div class="star" >
+      <div class="layer2">
+          <div></div>
+      </div>
+    <div class="tree" style="position: relative; margin-top: -28px;">
+        <div class="branch">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="branch"><!--2-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="branch"><!--3-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="branch"><!--4-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <div class="branch"><!--5-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+      
+        <div class="branch"><!--6-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+      
+      <div class="branch"><!--7-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+         <div class="branch"><!--8-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+      
+      <div class="branch"><!--9-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+      
+      <div class="branch"><!--10-->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+    
+     </div>
+ 
+</div>
+    <div class="stump" style="position: absolute; top: 54.5%; left: 50%; transform: translate(-50%,-50%); "></div>
+    
+<h1 style="font-size: 6.5vh; text-align: center; color:rgba(102,255,51,0.9);  word-spacing: 10px; text-shadow:2px 2px 1px #66ff33,2px 2px 1px #66ff33,2px 2px 1px #66ff33,2px 2px 1px #66ff33; display: flex; justify-content: center;   font-family: 'Berkshire Swash', cursive;"><span style="color:#007700;">🎄 </span> Merry Christmas <span style="color:#007700 ;">🎄</span></h1>
+<div class="bokeh">
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+</div>
+
+</body>
+</html>
